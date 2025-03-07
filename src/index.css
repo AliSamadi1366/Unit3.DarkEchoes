@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: black;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+  color: beige;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.episodes {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+}
+
+.episodes li {
+  padding: 1ch;
+  border: 1px solid #ccc;
+}
+
+.episodes li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.details {
+  display: grid;
+  grid-template-rows: 1fr 5fr 4.5fr 1fr;
+}
+.details p {
+  font-size: x-large;
+}
+.details button {
+  grid-row: span -1;
+  width: 100%;
+  height: 100%;
+}
+.details button:hover {
+  cursor: pointer;
+  font-style: italic;
+}
